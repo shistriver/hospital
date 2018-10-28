@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>hospital</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/iconfont/iconfont.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+</head>
+<body>
+	<div class="nav">
+		<div class="container clearfix">
+			<h1 class="logo lf">
+				<a href="index.html">
+	          <img src="images/logo.png" alt="logo">
+        </a>
+	    </h1>
+	    <ul class="navbar rt">
+	    	<li class="menu">
+          		<a href="index.html" class="link current">首页</a>
+	    	</li>
+	    	<li class="menu">
+	    		<a href="companyProfile.html" class="link">企业概况</a>
+	    		<ul class="submenu">
+                    <li>
+                        <a href="companyProfile.html">企业简介</a>
+                    </li>
+                    <li>
+                        <a href="ourTeam.html">团队介绍</a>
+                    </li>
+                    <li>
+						<a href="successCase.html">成功案例</a>
+                    </li>
+                </ul>
+	    	</li>
+	    	<li class="menu">
+	    		<a href="product.html" class="link">产品与服务</a>
+	    		<ul class="submenu">
+                    <li>
+						<a href="product.html">肿瘤细胞治疗</a>
+                    </li>
+                    <li>
+						<a href="immune.html">免疫功能检验</a>
+                    </li>
+                    <li>
+						<a href="antiAging.html">免疫抗衰老</a>
+                    </li>
+                    <li>
+						<a href="stemCell.html">干细胞治疗</a>
+                    </li>
+                </ul>
+	    	</li>
+	    	<li class="menu">
+	    		<a href="news.html" class="link">新闻动态</a>
+	    		<ul class="submenu">
+                    <li>
+						<a href="news.html">公司新闻</a>
+                    </li>
+                    <li>
+						<a href="news.html">业界新闻</a>
+                    </li>
+                </ul>
+	    	</li>
+	    	<li class="menu">
+	    		<a href="talent.html" class="link">人才招聘</a>
+	    	</li>
+			<li class="menu">
+				<a href="aboutus.html" class="link">联系我们</a>
+			</li>
+	    </ul>
+		</div>
+	</div>
+
+	<div class="swiper-container">
+	    <div class="swiper-wrapper">
+	        <div class="swiper-slide"><img src="images/banner1.jpg" /></div>
+	        <div class="swiper-slide"><img src="images/banner2.jpg" /></div>
+	        <div class="swiper-slide"><img src="images/banner3.jpg" /></div>
+	    </div>
+	    <!-- 如果需要分页器 -->
+	    <div class="swiper-pagination"></div>
+	</div>
+	<script language="javascript">
+		$(function(){
+		    var swiper = new Swiper('.swiper-container', {
+		    	effect : 'fade',
+		    	spaceBetween: 30,
+		    	centeredSlides: true,
+		    	autoplay: {
+		        delay: 2500,
+		        disableOnInteraction: false
+		    	},
+		      pagination: {
+		        el: '.swiper-pagination',
+		        clickable: true,
+		      },
+		      navigation: {
+		        nextEl: '.swiper-button-next',
+		        prevEl: '.swiper-button-prev',
+		      },
+		    });
+
+		    $('.swiper-slide').mouseenter(function () {
+				   swiper.autoplay.stop();
+				})
+				$('.swiper-slide').mouseleave(function () {
+				   swiper.autoplay.start();
+				})
+			})
+	  </script>
+	<div id="main" class="container">
+		<div class="section section1 clearfix">
+			<h3 class="title">企业概况</h3>
+			<ul class="scene-wrap">
+                <li>
+                    <a href="companyProfile.html" class="scene-content">
+                        <div class="scene-img">
+                        	<i class="icon iconfont icon-qiye"></i>
+                        </div>
+                        <h4>企业简介</h4>
+                        <p>贝赛尔特（北京）生物技术有限公司（ Bioceltech Therapeutics, Ltd），
+                        是一家专注于免疫细胞治疗新技术研发与应用的高科技公司，位于北京市重点规划的生物高新技术产业聚集区--中关村生命科学园的北大医疗产业园。</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="ourTeam.html" class="scene-content">
+                        <div class="scene-img">
+                        	<i class="icon iconfont icon-tuandui_keshi"></i>
+                        </div>
+                        <h4>专家团队</h4>
+                        <p>公司核心技术团队由来自宾夕法尼亚大学（University of Pennsylvania）及哈佛大学等美国著名
+                        免疫细胞治疗中心及企业的资深免疫细胞治疗专家团队组建，他们在国外从事CAR-T等免疫细胞治
+                        疗的研发、质量控制、标准化生产管理和临床应用管理近二十年，是国际上早期进行CAR-T研发。</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="successCase.html" class="scene-content">
+                        <div class="scene-img">
+                        	<i class="icon iconfont icon-yijin10-zixunanli"></i>
+                        </div>
+                        <h4>成功案例</h4>
+                        <p>团队于2016年与北京大学人民医院血液病研究所合作，
+                        开拓性应用HLA半相合异体CAR-T（患者亲属的T细胞）
+                        成功地治愈了一例复发性难治性急性淋巴细胞白血病（ALL）的3岁患儿。</p>
+                    </a>
+                </li>
+            </ul>
+		</div>
+		<div class="section section2">
+			<h3 class="title">产品与服务</h3>
+			<ul class="photo-img clearfix">
+				<li>
+					<div class="img-box">
+						<img src="images/list01.jpg" alt="">
+						<div class="mask">
+							<p>肿瘤生物治疗是一种新兴的、具有显著疗效的肿瘤治疗模式，是一种自身免疫抗癌的新型治疗方法。<a href="product.html">更多></a></p>
+						</div>
+					</div>
+					<h3 class="text">
+						<a href="product.html">肿瘤细胞治疗</a>
+					</h3>
+				</li>
+				<li>
+					<div class="img-box">
+						<img src="images/list02.jpg" alt="">
+						<div class="mask">
+							<p>免疫功能检测与评价，无论对接受免疫细胞治疗的病人，还是接受免疫细胞保健的亚健康人群和正常人群，都具有临床指导和监测意义。<a href="immune.html">更多></a></p>
+						</div>
+					</div>
+					<h3 class="text">
+						<a href="immune.html">免疫功能检测</a>
+					</h3>
+				</li>
+				<li>
+					<div class="img-box">
+						<img src="images/list03.jpg" alt="">
+						<div class="mask">
+							<p>免疫衰老（Immunosenscence）是近年来基础免疫学与免疫治疗学研究的热点之一。<a href="antiAging.html">更多></a></p>
+						</div>
+					</div>
+					<h3 class="text">
+						<a href="antiAging.html">免疫抗衰老</a>
+					</h3>
+				</li>
+				<li>
+					<div class="img-box">
+						<img src="images/list04.jpg" alt="">
+						<div class="mask">
+							<p>干细胞是具有自我复制和多向分化潜能的原始细胞，是机体的起源细胞， 是形成人体各种组织器官的原始细胞。在一定条件下，它可以分化成多种功能细胞或组织器官，医学界称其为“万用细胞”。<a href="stemCell.html">更多></a></p>
+						</div>
+					</div>
+					<h3 class="text">
+						<a href="stemCell.html">干细胞治疗</a>
+					</h3>
+				</li>
+			</ul>
+		</div>
+		<div class="section section3">
+			<h3 class="title">新闻动态</h3>
+			<div class="news-wrap clearfix">
+				<div class="new-l">
+					<a href="javascript:;" class="new-box">
+						<img src="images/news02.jpg" alt="">
+					</a>
+					<!-- <p class="text">今日，CAR-T疗法终于迎来了重大升级！一项发表在国际顶级期刊《细胞》的研究论文为这项突破性技术打开一扇新的大门，使其安全性和有效性得到大幅提升。相关论文由来自美国波士顿大学的Wilson Wong教授、研究生Joon Hwan Cho以及麻省理工学院的Jim Collins教授共同撰写，题为“Universal Chimeric Antigen Receptors for Multiplexed and Logical Control of T Cell Responses”。</p> -->
+				</div>
+				<div class="new-info">
+					<h4>
+						<a href="news.html" class="more">更多></a>
+						公司新闻
+					</h4>
+					<div id="newsCarousel">
+						<ul class="news-list">
+							<li>
+								<a href="new-detail.html">
+									<span class="text ellipsis">着重解决优质医疗资源供求矛盾突出、群众就医负担较重问题</span>
+									<span class="time">2018-10-26</span>
+								</a>
+							</li>
+							<li>
+								<a href="new-detail.html">
+									<span class="text ellipsis">纳米刀，精确击穿肿瘤细胞</span>
+									<span class="time">2018-10-26</span>
+								</a>
+							</li>
+							<li>
+								<a href="new-detail.html">
+									<span class="text ellipsis">国家重点实验室学术会议召开</span>
+									<span class="time">2018-10-26</span>
+								</a>
+							</li>
+							<li>
+								<a href="new-detail.html">
+									<span class="text ellipsis">你的眼睛是否过度疲劳？</span>
+									<span class="time">2018-10-26</span>
+								</a>
+							</li>
+							<li>
+								<a href="new-detail.html">
+									<span class="text ellipsis">青少年体重管理三大误区</span>
+									<span class="time">2018-10-26</span>
+								</a>
+							</li>
+							<li>
+								<a href="new-detail.html">
+									<span class="text ellipsis">预防心肌梗塞</span>
+									<span class="time">2018-10-26</span>
+								</a>
+							</li>
+							<li>
+								<a href="new-detail.html">
+									<span class="text ellipsis">移动医疗市场成熟还需三到五年时间</span>
+									<span class="time">2018-10-26</span>
+								</a>
+							</li>
+							<li>
+								<a href="new-detail.html">
+									<span class="text ellipsis">社保卡不完全使用手册</span>
+									<span class="time">2018-10-26</span>
+								</a>
+							</li><li>
+								<a href="new-detail.html">
+									<span class="text ellipsis">医保异地结算打开一扇窗</span>
+									<span class="time">2018-10-26</span>
+								</a>
+							</li><li>
+								<a href="new-detail.html">
+									<span class="text ellipsis">国人胃病发生率达85% 胃的问题可能与脾相关</span>
+									<span class="time">2018-10-26</span>
+								</a>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 联系我们 -->
+		<div class="section section4">
+			<h3 class="title">联系我们</h3>
+			<div class="contact-img">
+				<a href="aboutus.html"><img src="images/about02.png" alt=""></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="container foot-centent clearfix">
+	    <dl>
+	      <dt class="left">
+	        <img src="images/phone.png" alt="">
+	      </dt>
+	      <dd class="left">
+	        <p>咨询电话</p>
+	        <p>400-8000000</p>
+	      </dd>
+	    </dl>
+	    <dl>
+	      <dt class="left">
+	        <img src="images/email.png" alt="">
+	      </dt>
+	      <dd class="left">
+	        <p>联系邮箱</p>
+	        <p>qwerty@uio.com</p>
+	      </dd>
+	    </dl>
+	    <dl>
+	      <dt class="left">
+	        <img src="images/address.png" alt="">
+	      </dt>
+	      <dd class="left">
+	        <p>公司地址</p>
+	        <p>河北省 廊坊市</p>
+	        <p>开发区润泽国际信息港</p>
+	      </dd>
+	    </dl>
+	    <div class="back-bar" id="backBtn">
+	      <div class="kefu">
+	        <i></i>
+	        <span>联系客服</span>
+	        <div class="kefu-box">
+	          <div class="kefu-content">
+	            <p class="title">客服电话</p>
+	            <p class="num">400-8000000</p>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="gotop"></div>
+	    </div>
+		
+	  </div>
+    <p class="copyright" style="text-align: center;height: 28px;">
+        Copyright © 2015北京银盾泰安网络科技有限公司 京ICP备15059727号
+    </p>
+    <div style="text-align: center; padding-bottom:20px;">
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=13109802000345" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+            <img src="images/record_icon.png" style="float:left;"/>
+            <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px;color: #b5b5b5">
+                冀公网安备 13109802000345号
+            </p>
+        </a>
+    </div>  
+	</div>
+	<script src="js/scrollTop.js"></script>
+	<script src="js/newsScroll.js"></script>
+</body>
+</html>
